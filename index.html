@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Survey Form</title>
+
+<!-- Kept row div to be able to add responsive columns if needed -->
+
+<div class="row"> 
+  <div class="column">
+    <h1 id="title" class="title">Survey</h1>
+    <form id="survey-form" class="survey">
+      <p id="description" class="description">How much do you know about Big-O time complexity?</p>
+      <label for="name" id="name-label">Name: </label><br>
+      <input id="name" placeholder="Enter Name" class="input-fields name-field" required><br>
+      <label for="email" id="email-label">Email: </label><br>
+      <input type="email" id="email" placeholder="Enter Email" class="input-fields email-field" required><br>
+      <label for="number" id="number-label">Age: </label><br>
+      <input type="number" id="number" class="input-fields number-field" placeholder="Age" min="1" max="120"><br>
+      <label for="dropdown">Stack worst case for insertion?</label><br>
+      <select id="dropdown" class="input-fields">
+        <option value="dropdown-O(n)">O(n)</option>
+        <option value="dropdown-O(1)">O(1)</option>
+        <option value="dropdown-O(n!)">O(n!)</option>
+      </select><br>
+      <label for="radio" id="array-label" class="array-label">Array worst case for deletion? <br></label>
+      <input type="radio" name="array" value="array-O(n+k)"> O(n+k)<br>
+      <input type="radio" name="array" value="array-O(n)"> O(n)<br>
+      <label for="checkbox" id="multiple-ds" class="multiple-ds">Select the data structures with O(1) worst case time complexity for access: <br></label>
+      <input type="checkbox" name="dsbox1" value="array"> Array<br>
+      <input type="checkbox" name="dsbox2" value="stack"> Stack<br>
+      <input type="checkbox" name="dsbox3" value="queue"> Queue<br>
+      <input type="checkbox" name="dsbox4" value="singly-linked list"> Singly-Linked List<br>
+      <textarea rows="4" cols="50" id="comments" class="comment-field">Write comments here.</textarea><br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

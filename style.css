@@ -1,0 +1,103 @@
+/* csslint box-sizing: false */
+
+/* Body */
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.row,
+.title {
+  text-align: center;
+}
+
+.column {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.625rem;
+  text-align: left;
+}
+
+.survey,
+.title {
+  overflow: auto;
+}
+
+/* Element sizes */
+
+.email-field,
+.name-field {
+  width: 15rem;
+}
+
+.number-field {
+  max-width: 3rem;
+}
+
+input .input-fields {
+  width: 3.3rem;
+}
+
+.input-fields {
+  height: 1.3rem;
+}
+
+.description,
+.multiple-ds {
+  max-width: 23rem;
+}
+
+/* Element margins */
+
+input,
+select {
+  box-sizing: border-box;
+  margin: 0.6rem 0;
+}
+
+.multiple-ds,
+.array-label {
+  display: block;
+  margin: 0.6rem 0;
+}
+
+/* Comments */
+
+.comment-field {
+  box-sizing: border-box;
+  margin: 1.6rem 0;
+}
+
+/* Button */
+
+button {
+  background-color: #3686be;
+  border: none;
+  box-shadow: 1px 1px 1px #000000;  
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1rem;  
+  margin-bottom: 0.625rem; 
+  opacity: 0.8; 
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 1
+}
+
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+  }
+
+  .input-fields,
+  .comment-field {
+    max-width: 100%;
+  }
+}
