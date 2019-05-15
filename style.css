@@ -19,6 +19,7 @@ body {
   display: inline-block;
   padding: 0.625rem;
   text-align: left;
+  width: 100%;
 }
 
 .survey,
@@ -43,6 +44,7 @@ input .input-fields {
 
 .input-fields {
   height: 1.3rem;
+  max-width: 100%;
 }
 
 .description,
@@ -69,6 +71,8 @@ select {
 .comment-field {
   box-sizing: border-box;
   margin: 1.6rem 0;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* Button */
@@ -91,13 +95,8 @@ button:hover {
   opacity: 1
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 25rem) {
   .column {
-    width: 100%;
-  }
-
-  .input-fields,
-  .comment-field {
-    max-width: 100%;
+    max-width: 25rem;
   }
 }
