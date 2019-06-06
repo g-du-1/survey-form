@@ -98,6 +98,12 @@ button:hover {
   opacity: 1
 }
 
+@-moz-document url-prefix() {
+  .column {
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 25rem) {
   .column {
     max-width: 25rem;
