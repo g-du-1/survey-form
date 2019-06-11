@@ -20,7 +20,6 @@ html {
   margin: 0.5rem; 
   padding: 0.625rem;
   text-align: left;
-  width: 100%;
 }
 
 .survey,
@@ -96,12 +95,6 @@ button {
 
 button:hover {
   opacity: 1
-}
-
-@-moz-document url-prefix() {
-  .column {
-    width: auto;
-  }
 }
 
 @media screen and (min-width: 25rem) {
